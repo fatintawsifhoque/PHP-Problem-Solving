@@ -148,3 +148,14 @@ function countVowel($str){
     echo $count;
 }
 countVowel("The quick brown fox jumps over the lazy dog");
+echo "<br> <br>";
+/*Problem -> 10 => Print Only Multiples of 4
+Write a for loop from 1 to 40.
+Print only the numbers that are divisible by 4.
+Each number on a new line.*/
+function multiplyOf4(){
+    for($i = 1; $i<=10;$i++){
+        echo $i*4 . "<br>";
+    }
+}
+multiplyOf4();
