@@ -186,3 +186,90 @@ function printsquare(){
     }
 }
 printsquare();
+echo "<br> <br>";
+/*Problem -> 13 => Number Classifier
+Make a PHP script that checks a number. First, check if the number is positive or negative. Then, check if the number is even or odd.
+
+Take input or define variable
+
+Show output like: "The number -4 is Negative and Even".*/
+function numberClassifier($num){
+    $posOrNeg = "";
+    if($num>0){
+        $posOrNeg = "Posivie";
+    }
+    elseif($num<0){
+        $posOrNeg = "Negative";
+    }
+    else{
+        $posOrNeg = "Zero";
+    }
+    $evenOrOdd = "";
+    if($num%2 ==0){
+        $evenOrOdd = "Even";
+    }
+    else{
+        $evenOrOdd = "Odd";
+    }
+    echo "The number {$num} is {$posOrNeg} and {$evenOrOdd}";
+}
+numberClassifier(-4);
+echo "<br> <br>";
+/*Problem -> 14 => Temperature Converter
+Make a PHP script that takes temperature input or static variable and converts it between Celsius and Fahrenheit.
+
+Celsius to Fahrenheit: (celsius * 9/5) + 32
+
+Fahrenheit to Celsius: (fahrenheit - 32) * 5/9*/
+function temperatureConverter($tem, $unit){
+    $unit = strtolower($unit);
+    if($unit ==="c"){
+        echo ($tem * 9/5) + 32 . "f";
+    }
+    else{
+        echo ($tem - 32)* 5/9 . "c";
+    }
+}
+temperatureConverter(25,"c");
+echo "<br> <br>";
+/*Problem -> 15 => Basic Auth System
+Create a PHP script with a hardcoded username and password.
+
+Set variables like $username = "admin" and $password = "1234".
+
+Create another sets of variable with inputUsername and inputPassword.
+
+Check if both match, show "Login Successful", otherwise show "Invalid username or password".*/
+function basicAuthSystem($user,$pass){
+    if($user === "admin" && $pass ==="1234"){
+        echo "Login Successful";
+    }
+    else{
+        echo "Invalid username or password";
+    }
+}
+basicAuthSystem("admin",1234);
+echo "<br> <br>";
+/*Problem -> 16 => Print Numbers 1 to 10 Using while
+Write a script that uses a while loop to print numbers from 1 to 10, each on a new line.*/
+function printNumbers(){
+    $i = 1;
+    while($i<=10){
+        echo $i. "<br>";
+        $i++;
+    }
+}
+printNumbers();
+echo "<br> <br>";
+/*Problem -> 17 => Countdown from 10 to 1
+Use a while loop to print a countdown from 10 to 1.
+After printing 1, print "Blast off!".*/
+function countdown() {
+    $i = 10;
+    while ($i >= 1) {
+        echo $i . "<br>";
+        $i--;
+    }
+    echo "Blast off!"; 
+}
+countdown();
