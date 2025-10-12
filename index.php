@@ -159,3 +159,30 @@ function multiplyOf4(){
     }
 }
 multiplyOf4();
+echo "<br> <br>";
+/*Problem -> 11 => "Hello" for Even, "World" for Odd
+Use a for loop from 1 to 5.
+
+If the number is even, print "Hello"
+If odd, print "World"*/
+function print1to5(){
+    for($i = 1;$i<=5;$i++){
+        if($i%2 ==0){
+            echo "Hello" . "<br>";
+        }
+        else{
+            echo "World". "<br>";
+        }
+    }
+}
+print1to5();
+echo "<br> <br>";
+/*Problem -> 12 => Print Squares of Numbers 1 to 5
+Use a for loop from 1 to 5.
+For each number, print its square (number × number).*/
+function printsquare(){
+    for($i = 1;$i<=5;$i++){
+        echo $i*$i . "<br>";
+    }
+}
+printsquare();
