@@ -248,6 +248,7 @@ function basicAuthSystem($user,$pass){
         echo "Invalid username or password";
     }
 }
+<<<<<<< HEAD
 basicAuthSystem("admin",1234);
 echo "<br> <br>";
 /*Problem -> 16 => Print Numbers 1 to 10 Using while
@@ -273,3 +274,6 @@ function countdown() {
     echo "Blast off!"; 
 }
 countdown();
+=======
+basicAuthSystem("admin",1234);
+>>>>>>> 4dbe35943c366c7260ae92ff04b2313f34ad1737
