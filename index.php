@@ -248,7 +248,6 @@ function basicAuthSystem($user,$pass){
         echo "Invalid username or password";
     }
 }
-<<<<<<< HEAD
 basicAuthSystem("admin",1234);
 echo "<br> <br>";
 /*Problem -> 16 => Print Numbers 1 to 10 Using while
@@ -274,6 +273,47 @@ function countdown() {
     echo "Blast off!"; 
 }
 countdown();
-=======
-basicAuthSystem("admin",1234);
->>>>>>> 4dbe35943c366c7260ae92ff04b2313f34ad1737
+echo "<br> <br>";
+/*Problem -> 18 => Sum of First N Natural Numbers
+Write a function sumWhile($n) that calculates the sum of numbers from 1 to $n using a while loop.
+Print the result like: Sum = 55 (if $n = 10).*/
+function sumWhile($n){
+    $sum = 0;
+    $i = 1;
+    while($i<=$n){
+        $sum += $i;
+        $i++;
+    }
+    echo $sum;
+}
+sumWhile(10);
+echo "<br> <br>";
+/*Problem -> 19 => Find the First Multiple of 7 Greater Than 50
+Use a while loop to find the smallest number greater than 50 that is divisible by 7.
+Print that number.*/
+function multiplyOf7GreaterThan50() {
+    $i = 51; 
+    while (true) { 
+        if ($i % 7 == 0) {
+            echo $i;
+            break; 
+        }
+        $i++;
+    }
+}
+multiplyOf7GreaterThan50();
+echo "<br> <br>";
+/*Problem -> 20 => Countdown from 10 to 1
+Use a while loop to print a countdown from 10 to 1.
+After printing 1, print "Blast off!".*/
+<?php
+function simulateLoop() {
+    $input = "go"; 
+    
+    while ($input != "stop") {
+        echo "Running...<br>"; 
+        $input = "stop";       
+    }
+}
+simulateLoop();
+?>
