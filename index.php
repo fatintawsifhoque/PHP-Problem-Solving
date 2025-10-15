@@ -306,7 +306,7 @@ echo "<br> <br>";
 /*Problem -> 20 => Countdown from 10 to 1
 Use a while loop to print a countdown from 10 to 1.
 After printing 1, print "Blast off!".*/
-<?php
+
 function simulateLoop() {
     $input = "go"; 
     
@@ -316,4 +316,4 @@ function simulateLoop() {
     }
 }
 simulateLoop();
-?>
+
