@@ -316,4 +316,13 @@ function simulateLoop() {
     }
 }
 simulateLoop();
-
+echo "<br> <br>";
+/*Problem -> 21 => Print Numbers 1 to 10 Using while*/
+function print1To10While(){
+    $i = 1;
+    while($i<=10){
+        echo $i . "<br>";
+        $i++;
+    }
+}
+print1To10While();
