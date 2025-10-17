@@ -326,3 +326,41 @@ function print1To10While(){
     }
 }
 print1To10While();
+echo "<br> <br>";
+/*Problem -> 22 => Print All Items*/
+function printAllItems($arr){
+    foreach($arr as $item){
+        echo $item . "<br>";
+    }
+}
+printAllItems(["apple", "banana", "mango", "orange"]);
+echo "<br> <br>";
+/*Problem -> 23 => Sum of Numbers */
+function sumOfNums($arr){
+    $sum = 0;
+    foreach($arr as $num){
+        $sum += $num;
+    }
+    echo $sum;
+}
+sumOfNums([5, 10, 15, 20]);
+echo "<br> <br>";
+/*Problem -> 24 => Find the Largest Number */
+function findLargest($arr){
+    $largest = $arr[0];
+    foreach($arr as $item){
+        if($item>$largest){
+            $largest = $item;
+        }
+    }
+    echo $largest;
+}
+findLargest([34, 12, 89, 56, 23]);
+echo "<br> <br>";
+/*Problem -> 25 => Greet Names */
+function greetNames($names){
+    foreach($names as $name){
+        echo "Hello {$name}!" . "<br>";
+    }
+}
+greetNames(["Rahim", "Karim", "Sara"]);
