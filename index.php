@@ -364,3 +364,15 @@ function greetNames($names){
     }
 }
 greetNames(["Rahim", "Karim", "Sara"]);
+echo "<br> <br>";
+/*Problem -> 25 => Even or Odd */
+function EvenOrOddArr($arr) {
+    foreach ($arr as $el) {
+        if ($el % 2 == 0) {
+            echo "$el is even<br>";
+        } else {
+            echo "$el is odd<br>";
+        }
+    }
+}
+EvenOrOddArr([2, 7, 4, 9, 12]);
