@@ -376,3 +376,11 @@ function EvenOrOddArr($arr) {
     }
 }
 EvenOrOddArr([2, 7, 4, 9, 12]);
+echo "<br> <br>";
+/*Problem -> 26 => Print Each Word in Uppercase */
+function printToUpper($arr){
+    foreach($arr as $el){
+        echo strtoupper($el);
+    }
+}
+printToUpper(["hello", "world"]);
