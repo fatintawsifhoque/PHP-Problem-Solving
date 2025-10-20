@@ -384,3 +384,36 @@ function printToUpper($arr){
     }
 }
 printToUpper(["hello", "world"]);
+echo "<br> <br>";
+/*Problem -> 27 => Simple Greeting
+Write a function greet() that prints "Welcome to PHP!" when called. */
+function greet(){
+    echo "Welcome to PHP!";
+}
+greet();
+echo "<br> <br>";
+/*Problem -> 28 =>  Add Two Numbers
+Write a function sum($a, $b) that returns the sum of two numbers. */
+function sum($a,$b){
+    $sum = $a + $b;
+return $sum;
+}
+echo sum(10,20);
+echo "<br> <br>";
+/*Problem -> 29 => Default Greeting*/
+function defaultGreeting($name = "User"){
+    echo "Hello $name";
+}
+defaultGreeting("Fatin");
+echo "<br> <br>";
+/*Problem -> 30 => Find Maximum */
+function findMaximum($a,$b,$c){
+   if ($a >= $b && $a >= $c) {
+        return $a;
+    } elseif ($b >= $a && $b >= $c) {
+        return $b;
+    } else {
+        return $c;
+    }
+}
+echo findMaximum(10,20,30);
