@@ -417,3 +417,9 @@ function findMaximum($a,$b,$c){
     }
 }
 echo findMaximum(10,20,30);
+echo "<br> <br>";
+/*Problem -> 31 => Sum with Default Array */
+function sumArray($arr){
+    return array_sum($arr);
+}
+echo sumArray([1, 2, 3]);
