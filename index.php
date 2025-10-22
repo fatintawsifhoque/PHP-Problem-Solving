@@ -423,3 +423,48 @@ function sumArray($arr){
     return array_sum($arr);
 }
 echo sumArray([1, 2, 3]);
+echo "<br> <br>";
+/*Problem -> 32 => Filter Even Numbers
+Write a function getEvenNumbers($arr) that:
+
+Takes an array of numbers
+Returns a new array containing only the even numbers
+Do NOT use array_filter() or any built-in function
+Use only foreach and if */
+function getEvenNumbers($arr){
+    $even=[];
+    foreach($arr as $item){
+        if($item % 2 ==0){
+            array_push($even,$item);
+        }
+    }
+    return $even;
+}
+ print_r(getEvenNumbers([1, 2, 3, 4, 5, 6]));
+ echo "<br> <br>";
+/*Problem -> 33 => Max of Evens সমাধান করুন:
+
+দুটি ফাংশন লিখুন:
+isEven($n) → true/false রিটার্ন করবে
+maxEven($arr) → অ্যারের সবচেয়ে বড় জোড় সংখ্যা রিটার্ন করবে (যদি না থাকে, null রিটার্ন করবে) */
+function maxOfEvens($arr) {
+    $evArr = [];
+    $maxE = null;
+    
+    foreach ($arr as $it) {
+        if ($it % 2 == 0) {
+            $evArr[] = $it;
+        }
+    }
+
+    foreach ($evArr as $i) {
+        if ($maxE === null || $i > $maxE) {
+            $maxE = $i;
+        }
+    }
+    
+    return $maxE; 
+}
+
+var_dump(maxOfEvens([1, 2, 3, 4, 5, 6])); 
+var_dump(maxOfEvens([1, 3, 5]));        
