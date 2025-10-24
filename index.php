@@ -467,4 +467,20 @@ function maxOfEvens($arr) {
 }
 
 var_dump(maxOfEvens([1, 2, 3, 4, 5, 6])); 
-var_dump(maxOfEvens([1, 3, 5]));        
+var_dump(maxOfEvens([1, 3, 5]));     
+   echo "<br> <br>";
+/*Problem -> 34 => Find the Smallest Number in an Array
+Write a function findMin($arr) that:
+Takes an array of numbers
+Returns the smallest number
+Do not use min() or any built-in function */
+function findSmallestNumArr($arr){
+    $small =$arr[0];
+    foreach($arr as $it){
+        if($small>$it){
+            $small = $it;
+        }
+    }
+    return $small;
+}
+findSmallestNumArr([10, 3, 7, 1, 9]);
