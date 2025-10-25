@@ -484,3 +484,15 @@ function findSmallestNumArr($arr){
     return $small;
 }
 findSmallestNumArr([10, 3, 7, 1, 9]);
+echo "<br> <br>";
+/*Problem -> 35 => Reverse an Array (Without Built-in Functions) */
+function reverseArr($arr){
+    $reverseArr =[];
+    $revIn =count($arr)-1;
+    while($revIn>=0){
+        $reverseArr[] = $arr[$revIn];
+        $revIn--;
+    }
+    return $reverseArr;
+}
+print_r(reverseArr([1, 2, 3, 4]));
