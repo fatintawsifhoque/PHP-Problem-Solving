@@ -496,3 +496,17 @@ function reverseArr($arr){
     return $reverseArr;
 }
 print_r(reverseArr([1, 2, 3, 4]));
+echo "<br> <br>";
+/*Problem -> 36 => Count Occurrences of a Number
+সমস্যা:
+Write a function countOccurrences($arr, $target) that counts how many times $target appears in $arr. */
+function countOccu($arr, $t){
+    $count = 0;
+    foreach($arr as $it){
+        if($it == $t){
+            $count++;
+        }
+    }
+    return $count;
+}
+countOccu([10, 3, 7, 1, 9], 3);
