@@ -510,3 +510,22 @@ function countOccu($arr, $t){
     return $count;
 }
 countOccu([10, 3, 7, 1, 9], 3);
+echo "<br> <br>";
+/*Problem -> 37 => Check if Array is Sorted
+Write a function isSorted($arr) that:
+
+Returns true if the array is in ascending order
+Returns false otherwise */
+function isSorted($arr) {
+    $prev = $arr[0];
+    for ($i = 1; $i < count($arr); $i++) {
+        if ($arr[$i] < $prev) {
+            return false;
+        }
+        $prev = $arr[$i];
+    }
+    return true; 
+}
+
+var_dump(isSorted([1, 2, 3, 4])); 
+var_dump(isSorted([1, 3, 2, 4])); 
