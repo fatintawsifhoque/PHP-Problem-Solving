@@ -529,3 +529,24 @@ function isSorted($arr) {
 
 var_dump(isSorted([1, 2, 3, 4])); 
 var_dump(isSorted([1, 3, 2, 4])); 
+echo "<br> <br>";
+/*Problem -> 38 => Remove Duplicates */
+function removeDuplicates($arr) {
+    $unique = [];
+   foreach ($arr as $item) {
+        $found = false; 
+        
+        foreach ($unique as $u) {
+            if ($u == $item) {
+                $found = true;
+                break; 
+            }
+        }
+        if (!$found) {
+            $unique[] = $item;
+        }
+    }
+    
+    return $unique;
+}
+print_r(removeDuplicates([1, 2, 2, 3, 3, 4])); // [1, 2, 3, 4]
